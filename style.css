@@ -1,1 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 1440px;
+    height: 677px;
+    
+}
+
+/* Top Section banner */
+
+.top-section {
+    background-color: #2D25A0;
+    padding: 180px 140px 86px 156px;
+    box-sizing: border-box;
+}
+.top-banner {
+    display: flex;
+    align-items: center;
+}
+.banner-details {
+    margin-right:142px;
+}
+.banner-title {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    width: 485px;
+    height: 230px;
+}
+.btn-watch {
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 57px;
+}
+.banner-image img {
+    width: 556.01px;
+    height: 438px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+.player {
+    background-color: white;
+    width: 330px;
+    height: 474px;
+    box-shadow: 10px 10px 5px white;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
