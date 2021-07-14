@@ -59,8 +59,8 @@ body {
 .players {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
     
 }
 .player {
@@ -68,15 +68,23 @@ body {
     width: 330px;
     height: 474px;
     box-shadow: 10px 10px 20px gray;
-    padding: 10px;
+    padding: 15px;
+    transition: transform 1s;
+}
+.player:hover {
+    transform: scale(1.1);
 }
 .player img{
     width: 100%;
     height: 256px;
 
 }
+.player-title {
+    font-size: 28px;
+}
 .player-info {
     color: #6C6C6C;
+    font-size: 16px;
 }
 
 
@@ -107,12 +115,16 @@ body {
     font-size: 20px;
 }
 .btn-post {
-    padding: 20px;
+    padding: 10px 24px;
     background-color:yellowgreen;
     font-weight: 700;
     border-radius: 20px;
     color: aliceblue;
 }
+.btn-text {
+    margin-right: 5px;
+}
+
 
 /* Post section Style End */
 
