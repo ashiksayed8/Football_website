@@ -3,10 +3,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    width: 1440px;
-    height: 677px;
-    
+    font-family: 'Poppins', sans-serif; 
 }
 
 /* Top Section banner */
@@ -14,11 +11,10 @@ body {
 .top-section {
     background-color: #2D25A0;
     padding: 180px 140px 86px 156px;
-    box-sizing: border-box;
 }
 .top-banner {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .banner-details {
     margin-right:142px;
@@ -43,17 +39,157 @@ body {
     height: 438px;
 }
 
+/* Player Introduction Section  */
+
+.player-Intro {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+}
+
 .players {
     display: grid;
-    grid-template-columns: repeat(3,1fr)
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    
 }
 .player {
     background-color: white;
     width: 330px;
     height: 474px;
-    box-shadow: 10px 10px 5px white;
+    box-shadow: 10px 10px 20px gray;
+    padding: 10px;
 }
 .player img{
-    width: 300px;
+    width: 100%;
     height: 256px;
+
+}
+
+/* Post section Style Start */
+
+.post-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    padding: 100px 100px;
+}
+.post-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px greenyellow;
+    
+}
+.post-input {
+    border: 2px solid blanchedalmond;
+    padding: 15px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 20px;
+}
+.btn-post {
+    padding: 20px;
+    background-color:yellowgreen;
+    font-weight: 700;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+
+/* Post section Style End */
+
+/* Clock Design Style Start */
+.clock-section {
+    padding: 30px 0px;
+}
+.clock-title {
+    text-align: center;
+    color: yellow;
+}
+ .clock-design {
+     display: flex;
+     justify-content: center;
+ }
+ .hour-design {
+     padding: 20px;
+     background-image: linear-gradient(red,green);
+     margin-right: 20px;
+     border-radius: 40px;
+     text-align: center;
+     color: aliceblue;
+ }
+ .minutes-design {
+    padding: 20px;
+    background-image: linear-gradient(red,green);
+    margin-right: 20px;
+    border-radius: 40px;
+    text-align: center;
+    color: chartreuse;
+}
+ .second-design {
+     padding: 20px;
+     background-image: linear-gradient(red,green);
+     margin-right: 20px;
+     border-radius: 40px;
+     text-align: center;
+     color: darkgoldenrod;
+ }
+
+/* Clock Design Style End */
+
+
+/* Footer section style  */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer-section img {
+    width: 483.87px;
+    height: 110px;
+}
+.fab.social {
+          padding: 10px;
+          font-size: 14px;
+          color: red;
+          border-radius:50%;
+          background-color: bisque;
+}
+
+
+
+/* Media Queryies Using */
+
+@media only screen and (max-width: 668px) {
+
+    .top-section {
+        padding: 100px 15px 61px 15px;
+    }
+   .top-banner {
+       display: grid;
+       grid-template-columns: 1fr;
+    }
+    .banner-image img {
+        margin-top: 30px;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .post-section {
+        display: grid;
+        grid-template-columns:1fr;
+        padding: 10px 10px;
+        width: 100%;
+    }
+  
+    
 }
