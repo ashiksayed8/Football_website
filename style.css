@@ -7,9 +7,15 @@ body {
 }
 
 /* Top Section banner */
+
 .top-section {
     background-color: #2D25A0;
     padding: 180px 140px 86px 156px;
+    transition: background-color 2s linear , transform 2s linear;
+}
+.top-section:hover {
+    background-color: darkolivegreen;
+    transform: scale(1.2);
 }
 .top-banner {
     display: grid;
@@ -36,9 +42,13 @@ body {
 .banner-image img {
     width: 556.01px;
     height: 438px;
+    transition: transform 1s;
+}
+.banner-image:hover img {
+    transform: rotate(30deg);
 }
 
-/* Player Introduction Section  */
+/* Player Introduction Section start  */
 
 .player-Intro {
       display: flex;
@@ -46,7 +56,6 @@ body {
       margin-top: 20px;
       margin-bottom: 20px;
 }
-
 .players {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -70,6 +79,9 @@ body {
     color: #6C6C6C;
 }
 
+
+/* Player Introduction Section End  */
+
 /* Post section Style Start */
 
 .post-section {
@@ -85,8 +97,7 @@ body {
     background-color: antiquewhite;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px greenyellow;
-    
+    box-shadow: 10px 10px 10px greenyellow;    
 }
 .post-input {
     border: 2px solid blanchedalmond;
@@ -102,7 +113,6 @@ body {
     border-radius: 20px;
     color: aliceblue;
 }
-
 
 /* Post section Style End */
 
@@ -134,7 +144,7 @@ body {
     text-align: center;
     color: chartreuse;
 }
- .second-design {
+.second-design {
      padding: 20px;
      background-image: linear-gradient(red,green);
      margin-right: 20px;
@@ -147,6 +157,7 @@ body {
 
 
 /* Footer section style  */
+
 .footer-section {
     display: flex;
     flex-direction: column;
@@ -167,7 +178,7 @@ body {
 
 
 
-/* Media Queryies Using */
+/* Media Queries Using */
 
 @media only screen and (max-width: 668px) {
     
@@ -177,7 +188,6 @@ body {
         flex-wrap: wrap;
         align-items: center;
     }
-
     .top-section {
         padding: 100px 15px 61px 15px;
     }
@@ -194,7 +204,6 @@ body {
         width: 329px;
         height: 259.17px;
     }
-
     .post-section {
         display: grid;
         grid-template-columns:1fr;
